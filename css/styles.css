@@ -107,21 +107,11 @@ nav li {
     
 }
 
-
-.trees {
-    border-radius: 50%;
-    position: absolute;
-}
-
-.webshop {
-    border-radius: 100px;
-}
-
- footer {
+footer {
     background-color: #404040;
    color: #FFFFFF
    
-}  
+} 
 
 @media only screen and (min-width: 600px) {
     .container {
@@ -148,6 +138,20 @@ nav li {
     text-align: center;
     left: 100px;
   }
+
+.trees {
+    min-height: 250px;
+    background-image: url("/images/home-trees.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-size: 6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: bolder;
+    color: #FFFFFF
+
+
+}
 
 
   

@@ -1,6 +1,6 @@
 
 body {
-    font-family: Helvetica, Arial, sand-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -12,18 +12,24 @@ h2 {
 
 header {
     font-size: medium;
-    
+
+}
+
+footer {
+    background-color: #404040;
+    color:#FFFFFF
 }
 
 /* Links */
 a {
     text-decoration: none;
-    font-weight: lighter;
-  }
+    color:#FFFFFF
+}
   
-  header a {
+  nav a {
     color: #404040;
     padding: 10px;
+    font-weight: lighter;
  }
 
  header {
@@ -31,14 +37,13 @@ a {
  } 
 
  .slogan {
-     display: inline-block
+     display: inline-block;
      padding-left: 30px;
      background-color: #404040;
-     height: 25px;
-     width: 1600px;
-     padding-left: 30px;
      color: #FFFFFF;
-     
+     font-size: large;
+     height: 40px;
+     width: 1600px;
   }
 
 .floated {
@@ -51,38 +56,41 @@ a {
     color:#0E738C ;
 }
 nav li {
-      display: inline;
+    display: inline;
     }
 
- .fa-solid fa-magnifying-glass {
-     padding-left: 10px;
-     padding-right: 10px;
+.fa-solid fa-magnifying-glass {
+    padding-left: 10px;
+    padding-right: 10px;
  }   
 
- .fa-solid fa-cart-shopping {
-     padding-left: 10px;
-     padding-right: 10px;
+.fa-solid fa-cart-shopping {
+    padding-left: 10px;
+    padding-right: 10px;
  }
 
- .logo {
-       max-width: 150px;
-       padding-top: 20px;
-       padding-left:  10px;
+.logo {
+    max-width: 150px;
+    padding-top: 20px;
+    padding-left:  10px;
     }
 
-    .cta {
-        background-color: #0E738C;
-        color: #fff;
-        font-size: 1em;
-        padding: 10px 40px;
-        border-radius: 5px;
-       }   
+.cta {
+    background-color: #0E738C;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 40px;
+    border-radius: 5px;
+        
+ }    
 
 .container {
     display: flex;
-    justify-content: space-evenly;
-    max-height: max-content
-    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 200px
+    max-height: max-content;
+    text-decoration: none;
 }
 
 .item {
@@ -90,34 +98,26 @@ nav li {
 }
 
 .one {
-    color:#FFFFFF;
     text-decoration: none;
-
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1,5rem;
+  
 }
 
 .two {
-    color:#FFFFFF;
     text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1,5rem;
+  
 }
 
 .copy {
-    color:#FFFFFF ;
-    padding-left: 100px;
-    padding-top: 50px;
-    
+    display: inline-block;
+    position: center;
+    padding-left: 550px;
+    padding-top: 40px;
 }
 
-footer {
-    background-color: #404040;
-   color: #FFFFFF
-   
-} 
-
-@media only screen and (min-width: 600px) {
-    .container {
-        flex-direction: row;
-    }
-}
 
 
 /* Home page */
@@ -132,7 +132,7 @@ footer {
     border-bottom:30px solid white;
    }
 
-   .welcome_content {
+.welcome_content {
     position: relative;
     top: 400px;
     text-align: center;
@@ -140,18 +140,75 @@ footer {
   }
 
 .trees {
-    min-height: 250px;
-    background-image: url("/images/home-trees.jpg"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+    display: flex;
+    gap: 20px;
     font-size: 6rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font: bolder;
-    color: #FFFFFF
+    color: #FFFFFF;
+    min-height: 400px;
+    background-image: url("/images/trees-desktop.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 100px;
+ } 
 
-
+.link1 {
+    display: inline-flex;
+    gap: 50px;
+    background-image: url("/images/home-jackets-women.jpg");
+    background-repeat: no-repeat;
+    min-width: 400px;
+    min-height: 600px;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    color:#FFFFFF;
 }
+
+.link2 {
+    display: inline-flex;
+    background-image: url("/images/home-jacket-men.jpg");
+    background-repeat: no-repeat;
+    min-width: 400px;
+    min-height: 600px;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    color:#FFFFFF;
+}
+.about {
+    display:flex;
+    position: relative;
+    min-height: 500px;
+    min-width: 500px;
+    padding-top: 100px;
+    padding-left: 200px;
+    color:#404040
+}
+
+
+
+ @media only screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
 
 
   

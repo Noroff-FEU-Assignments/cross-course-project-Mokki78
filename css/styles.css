@@ -32,6 +32,19 @@ a {
     font-weight: lighter;
  }
 
+ nav {
+     display: none;
+ }
+
+ #hamburger-menu:checked ~ nav {
+     display: block;
+ }
+
+#hamburger-menu {
+    display: no
+}
+
+
  header {
      background-color: #FFFFFF;
  } 
@@ -155,12 +168,30 @@ nav li {
     margin-bottom: 100px;
  } 
 
+
+ .link {
+    flex-flow: column;
+    
+
+ }
+
 .link1 {
-    display: inline-flex;
-    gap: 50px;
+    flex-basis: auto 1fr;
+    position: relative;
+    max-width: 400px;
+    min-height: 600px;
     background-image: url("/images/home-jackets-women.jpg");
     background-repeat: no-repeat;
-    min-width: 400px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    color:#FFFFFF;
+}
+
+.link2 {
+    flex-basis: 1fr auto;
+    background-image: url("/images/home-jacket-men.jpg");
+    background-repeat: no-repeat;
+    max-width: 400px;
     min-height: 600px;
     position: relative;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -168,26 +199,62 @@ nav li {
     color:#FFFFFF;
 }
 
-.link2 {
-    display: inline-flex;
-    background-image: url("/images/home-jacket-men.jpg");
-    background-repeat: no-repeat;
-    min-width: 400px;
-    min-height: 600px;
-    position: relative;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5rem;
-    color:#FFFFFF;
-}
 .about {
     display:flex;
-    position: relative;
     min-height: 500px;
     min-width: 500px;
     padding-top: 100px;
     padding-left: 200px;
     color:#404040
 }
+
+/* About page */
+
+h1 {
+    color: #0E738C;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+ 
+.text {
+    display: flex;
+    flex: 8;
+
+}
+
+.text-image-container {
+
+}
+ {
+    background-image: url("/images/about/about-us-background.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    padding-left: 200px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.add-info {
+    display: flex;
+    gap: 50px;
+   
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

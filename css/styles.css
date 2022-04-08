@@ -1,7 +1,8 @@
 
-body {
-    width: 90%;
-    margin: 0 auto;
+html, body {
+    width: 100%;
+    height: 100;
+    margin: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -44,7 +45,26 @@ a {
  }
 
 #hamburger-menu {
-    display: no
+    display: none;
+}
+
+@media only screen and(max-width:600px) {
+    label {
+        display: block;
+        cursor:pointer;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        border-bottom: 1 px #404040;
+    }
+}
+
+#hamburger-menu:checked + .floated {
+    display: block;
 }
 
 
@@ -87,8 +107,8 @@ nav li {
 
 .logo {
     max-width: 150px;
-    padding-top: 20px;
-    padding-left:  10px;
+    padding-top: 60px;
+    padding-left:  20px;
     }
 
 .cta {
@@ -173,29 +193,32 @@ nav li {
 
 
  .link {
-    flex-flow: column;
+    display: flex;
+    justify-content: space-evenly;
     
 }
 
 .link1 {
-    flex-basis: auto 1fr;
+    
     position: relative;
-    max-width: 400px;
-    min-height: 600px;
+    max-width: 700px;
+    mheight: 800px;
     background-image: url("/images/home-jackets-women.jpg");
     background-repeat: no-repeat;
+    padding-left: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     color:#FFFFFF;
 }
 
 .link2 {
-    flex-basis: 1fr auto;
-    background-image: url("/images/home-jacket-men.jpg");
+    
+    background-image: url("/images/home-jackets-men.jpg");
     background-repeat: no-repeat;
-    max-width: 400px;
-    min-height: 600px;
+    max-width: 700px;
+    min-height: 800px;
     position: relative;
+    padding-right: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     color:#FFFFFF;
@@ -220,11 +243,16 @@ h1 {
  
 .text {
     display: flex;
-    flex: 8;
+    justify-content:space-between;
+    
 
 }
 
 .text-image-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-: 50px;
+
 
 }
 .about-background-image {
@@ -276,22 +304,30 @@ h2 {
     padding-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
- @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .container {
         flex-direction: row;
     }
 }
 
+@media only screen and(max-width:600px) {
+    label {
+        display: block;
+        cursor:pointer;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        border-bottom: 1 px #404040;
+    }
+}
 
+#hamburger-menu:checked + .floated {
+    display: block;
+}
 
 
 

@@ -148,10 +148,9 @@ nav li {
 }
 
 .copy {
-    display: inline-block;
-    position: auto;
-    padding-left: 550px;
-    padding-top: 40px;
+   width: 100px;
+   margin: 10px auto 10 px auto;
+   text-align: center;
 }
 
 
@@ -225,12 +224,12 @@ nav li {
 }
 
 .about {
-    display:flex;
-    min-height: 500px;
-    min-width: 500px;
-    padding-top: 100px;
-    padding-left: 200px;
-    color:#404040
+    display: flex;
+    flex-direction:column; 
+    max-width: 1200px;
+    min-width: 250px;
+    margin: auto;
+    
 }
 
 /* About page */
@@ -243,18 +242,19 @@ h1 {
  
 .text {
     display: flex;
-    justify-content:space-between;
-    
-
+    justify-content:space-evenly;
+    gap: 60px;
+    padding-right: 100px;
+   
 }
 
 .text-image-container {
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-: 50px;
-
-
+    padding-left:100px;
+    padding-right: 10px;
+    position: relative;
+    
 }
+
 .about-background-image {
     min-height: 600px;
     max-width: 1600px;
@@ -266,9 +266,13 @@ h1 {
 }
 
 h2 {
-    padding-left: 300px;
-    padding-bottom: 50px;
-    padding-top: 100px;
+    display: inline
+    width: 400px;
+    margin: auto 10px auto 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top:100px;
+    background-color: lightgrey;
 }
 
 .add-info {
@@ -292,17 +296,41 @@ h2 {
 }
 
 .info-image1 {
-    width: 300px;
-    border-radius: 50%;
+    width: 400px;
+    border-radius: 20%;
     padding-bottom: 20px;
+   
     
 }
 
+
 .info-image2 {
-    width: 300px;
-    border-radius: 50%;
+    width: 400px;
+    border-radius: 20%;
     padding-bottom: 20px;
 }
+
+
+.jackets-feature {
+    max-width: 1600px;
+    min-height: 600px;
+    background-image: url("/images/jackets/jackets-feature.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left:30px solid white;
+    border-right:30px solid white;
+    border-bottom:30px solid white;
+   }
+
+}
+
+.display-jackets {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+
+}
+
 
 @media only screen and (min-width: 600px) {
     .container {

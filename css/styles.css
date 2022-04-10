@@ -318,9 +318,24 @@ h2 {
 
 }
 
+img {
+    width: 100%;
+    max-width: 500px;
+    min-width: 50px;
+  
+    
+}
+
 .menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 100px;
+    max-width: 1000px;
+    min-width: 50px;
+    width: 100%;
+    object-fit: cover;
+    margin: 00px
+}
 }
 
 /* Hemsedal jacket page*/
@@ -339,6 +354,7 @@ h2 {
     flex-direction: columns;
     
 }
+
 
 .hemsedal-text-container {
     flex: 2;
@@ -371,11 +387,13 @@ h2 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
     position: relative;
-    color:#0E738C;
-    background-color:#404040;
+    color: #FFFFFF;
+    background-color: #404040;
+    padding: px;
 
 
 }
+
 
 
 
@@ -415,7 +433,6 @@ h2 {
 #hamburger-menu:checked + .floated {
     display: block;
 }
-
 
 
 

@@ -365,6 +365,19 @@ h2 {
     
 }
 
+/* Webshop page */
+
+.webshop-button {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    position: relative;
+    color:#0E738C;
+    background-color:#404040;
+
+
+}
+
+
 
 @media only screen and (min-width: 600px) {
     .hemsedal

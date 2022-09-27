@@ -1,7 +1,7 @@
 
 
 .cart-container {
-    width: 600px;
+    width: 80%;
     
 }
   
@@ -17,16 +17,13 @@
 }
 
 img {
-    width: 100%;
-    max-height: 400px;
-    min-width: 70px;
-    
+   min-width: 40%;
 }
 
 .image-box {
     flex-basis: auto;
     margin: 100px;
-    padding-left: 200px
+    padding-left: 200px;
     position: relative;
     
 
@@ -40,12 +37,12 @@ img {
 .title {
     padding-top: 5 px;
     line-height: 10px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 800;
     color: #026873;
     line-height: 20px;
-    background-color: 
+    
 }
    
  .subtitle {

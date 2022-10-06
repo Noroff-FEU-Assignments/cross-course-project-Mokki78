@@ -1,13 +1,14 @@
-
 html, body {
     max-width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: min-content;
-    grid-template-rows: auto, 1 fr, 1 fr auto;
-    min-height: 200px;
+    grid-template-columns: auto;
     grid-gap: 20px;
     font-family: Helvetica, Arial, sans-serif;
+    border-style:ridge;
+    padding: 40px;
+    border-bottom: 2em;
+    
 }
 
 h1 {
@@ -24,10 +25,13 @@ header {
 }
 
 footer {
-    background-color: #404040;
-    color:#FFFFFF
+    min-height: 200px;
+    background-image: url("/images/trees-desktop.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 100px;
 }
-
 /* Links */
 a {
     text-decoration: none;
@@ -58,7 +62,7 @@ a {
 }
 
 header {
-     background-color: #FFFFFF;
+     background-color: hsl(0, 0%, 100%);
  } 
 
  .slogan {
@@ -159,6 +163,7 @@ nav li {
     transition-duration: 0.4s;
     cursor: pointer;
     display: relative;
+    background-color: #404040, 30%;
 }
 
 .link:hover{
@@ -174,8 +179,8 @@ nav li {
 
 /* Home page */
 .welcome {
-    max-width: 1600px;
-    min-height: 600px;
+    max-width: 80%;
+    min-height: 30%;
     background-image: url("/images/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -191,21 +196,6 @@ nav li {
     left: 100px;
   }
 
-.trees {
-    display: flex;
-    gap: 20px;
-    font-size: 6rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font: bolder;
-    color: #FFFFFF;
-    min-height: 400px;
-    background-image: url("/images/trees-desktop.jpg"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 100px;
- } 
 
 .link1 {
     min-height:  400px;
@@ -345,16 +335,14 @@ h2 {
 
 
 .jackets-feature {
-    max-width: 1600px;
-    min-height: 600px;
+    max-width: 80%;
+    min-height: 400px;
     background-image: url("/images/jackets/jackets-feature.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-left:30px solid white;
-    border-right:30px solid white;
-    border-bottom:30px solid white;
-
-
+   border-right:30px solid white;
+   margin: 0 auto;
+   
 }
 
 img {
@@ -368,14 +356,26 @@ img {
 .menu {
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
-    max-width: 1000px;
+    max-width: 80%;
     min-width: 50px;
-    width: 100%;
     object-fit: cover;
     margin: 100px;
 }
 
+.menu-one {
+    background-color:#404040;
+
+}
+
+.menu-two {
+    background-color:#404040;
+
+}
+
+.menu-three{
+    background-color:#404040;
+
+}
 
 /* Hemsedal jacket page*/
 

@@ -1,14 +1,21 @@
-
+html, body {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: auto, 1 fr, 1 fr auto;
+    min-height: 200px;
+    grid-gap: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 .cart-container {
-    width: 80%;
+    width: 60%;
     
 }
   
-
-
 .cart-items {
-    margin: auto;
+    margin: 0 auto;
     width: 90%;
     height: 30%;
     display: flex;
@@ -16,7 +23,7 @@
     align-items: center;
 }
 
-img {
+.img {
    min-width: 40%;
 }
 
@@ -26,7 +33,6 @@ img {
     padding-left: 200px;
     position: relative;
     
-
 }
 
 .about {
@@ -53,6 +59,7 @@ img {
      color:black;
      background-color: lightgrey
  }   
+
 .header {
     margin: auto;
     width: 90%;
@@ -163,7 +170,7 @@ img {
 }
 
 .Subtotal {
-    margin-right: : 50px;
+    margin-right: 50px;
     font-size: 22px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight:700 ;
@@ -199,7 +206,7 @@ img {
     margin:0;
     padding:0;
     height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     

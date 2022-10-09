@@ -7,6 +7,7 @@
     <title>Rainys Days | Contact</title>
     <script src="https://kit.fontawesome.com/72d60656d6.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="js.script.js" async></script>
   </head>
   <body>
     <header>
@@ -34,16 +35,18 @@
      <main>
        <h1>Contact us</h1>
        <section>
-           <div class="contact-image">
+           <div class="contact-form">
              <form action="http://example.com/subscribe.php" method="POST">
-            
                 <legend>Contact Form</legend>
-                <label>First- and last name:<br /> 
-                <input type="text"  name="name"> </label><br />
+                <label >First- and last name:<br /> 
+                <input type="text"  name="name" id="name"> </label><br />
+                <div class="form-error" id="error-name">Please enter your full name</div>
                 <label>Email:<br /> 
-                <input type="text"  name="email"> </label><br />
+                <input type="text"  name="email" id="email"> </label><br />
+                <div class="form-error" id="error-email">Please enter a valid email</div>
                 <label>Telephone:<br /> 
-                 <input type="text"  name="mobile"> </label><br />
+                 <input type="text"  name="mobile" id="mobile"> </label><br />
+                 <div class="form-error" id="error-mobile">Must be at least 6 digits</div>
               </form>
               <form action="http://www.example.com/comments.php">
                 <p>Message</p><textarea name="comments"></textarea><br />

@@ -5,7 +5,9 @@ html, body {
     grid-template-columns: auto;
     grid-gap: 20px;
     font-family: Helvetica, Arial, sans-serif;
-    border-style:ridge;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
     padding: 40px;
     border-bottom: 2em;
     

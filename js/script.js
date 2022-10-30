@@ -32,6 +32,30 @@ function validateForm() {
 
 form.addEventListener("submit", validateForm);
 
+const url = "http://localhost:10024/wp-json/wc/v3/products?consumer_key=ck_9ff4a42e454ee15e0aa4ad19de6c8df9c8f589dc&secret_key=cs_c88195422dcb28592af7d4198366e81c1e17277d";
+const productContainer = document.querySelector(".products");
+
+async function getJackets() {
+    try{
+        const response = await fetch(url);
+        const getResults = await response.json();
+        console.log(getResults);
+    }
+
+    catch(error){
+        console.log(error);
+    }
+}
+
+getJackets();
+
+
+function createHTML(products){
+    products.forEach(function(product){
+        productContainer.innerHTML += `<div>${product.name;
+
+    })
+}
 
 
 

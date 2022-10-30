@@ -50,12 +50,12 @@ async function getJackets() {
 getJackets();
 
 
-function createHTML(products){
+function createHTML(products) 
     products.forEach(function(product){
-        productContainer.innerHTML += `<div>${product.name;
+        productContainer.innerHTML += `<div>${product.name}`;
 
     })
-}
+
 
 
 

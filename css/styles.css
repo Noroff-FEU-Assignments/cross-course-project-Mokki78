@@ -1,0 +1,586 @@
+html, body {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    border-style:ridge;
+    padding: 40px;
+    border-bottom: 2em;
+    background-color: #F2F2F2;
+    
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+   font-size: medium;
+}
+
+#button1 {
+    max-width: 50px;
+    max-height: 50px;
+
+}
+
+#button2 {
+    max-width: 50px;
+    max-height: 50px;
+
+}
+
+fieldset {
+    width: 350px;
+    border: 1px solid #404040;
+    border-radius: 20px;
+    text-align: left;
+
+}
+
+legend {
+    background-color:#A6A6A6;
+    border: 1 px solid #dcdcdc;
+    border-radius:  10px;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+footer {
+    min-height: 200px;
+    background-image: url("/images/trees-desktop.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 100px;
+}
+
+.products {
+    display: grid;
+    background-color: #0E738C;
+
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0,4s;
+}
+
+a:hover  {
+    color:#0E738C;
+}
+  
+  nav a {
+    color: #404040;
+    padding: 10px;
+    font-weight: lighter;
+ }
+
+ nav {
+     display: none;
+ }
+
+ #hamburger-menu:checked ~ nav {
+     display: block;
+ }
+
+#hamburger-menu {
+    display: none;
+}
+
+
+#hamburger-menu:checked + .floated {
+    display: block;
+}
+
+
+
+ .slogan {
+     display: inline-block;
+     padding-left: 30px;
+     background-color: #404040;
+     color: #FFFFFF;
+     font-size: large;
+     height: 40px;
+     width: 99%;
+  }
+
+.floated {
+    float: right;
+    padding-top: 90px;
+    padding-right: 20px;
+}
+
+.active {
+    color:#0E738C ;
+
+}
+nav li {
+    display: inline;
+    }
+
+.fa-solid fa-magnifying-glass {
+    padding-left: 10px;
+    padding-right: 10px;
+ }   
+
+.fa-solid fa-cart-shopping {
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+.logo {
+    max-width: 150px;
+    padding-top: 5px;
+    padding-left:  10px;
+    }
+
+.cta {
+    background-color: #0E738C;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 20px 50px;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 100px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+        
+ }    
+
+ .cta:hover {
+    background-color: #fff;
+    color: #0E738C;
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-height: max-content;
+    text-decoration: none;
+}
+
+.item {
+    flex: 2;
+    flex-direction: row;
+}
+
+.one {
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    flex-basis: auto;
+    display: relative;
+}
+
+.two {
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    display: relative;
+   
+}
+
+.link {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: relative;
+    background-color: #404040, 30%;
+}
+
+.link:hover{
+    color:#0E738C;
+}
+
+.copy {
+   width: 100px;
+   margin: 10px auto 10 px auto;
+   text-align: center;
+   font-size: 25px;
+   color: white;
+}
+
+/* Home page */
+.welcome {
+    width: 100%;
+    max-width: 900px;
+    min-width: 50px;
+    min-height: 250px;
+    background-image: url("/images/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 300px;
+    border-left:30px solid white;
+    border-right:30px solid white;
+    border-bottom:30px solid white;
+    border-top:30px solid white;
+    
+   }
+
+.welcome_content {
+    position: relative;
+    top: 400px;
+    text-align: center;
+    left: 100px;
+  }
+
+.link{
+    display: flex;
+    flex-direction: column;
+}  
+
+.link1 {
+     width: 70%;
+    max-width: 500px;
+    min-width: 50px;
+    min-height: 400px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#0E738C;
+    font-size: 30px;
+    
+}
+
+.link2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#0E738C;
+    font-size: 30px;
+     width: 70%;
+    max-width: 500px;
+    min-width: 50px;
+    min-height: 400px;
+   
+}
+
+.webshop-text {
+    color: black;
+    border: 1px solid black;
+    position:relative;
+    padding: 10px;
+    width: 70%;
+    max-width: 500px;
+    min-width: 50px;
+    min-height: 150px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    
+
+}
+
+.about {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#0E738C;
+    font-size: 30px;
+     width: 70%;
+    max-width: 500px;
+    min-width: 50px;
+    min-height: 400px;
+}
+
+/* About page */
+
+h1 {
+    color: #0E738C;
+    padding-left: 150px;
+    padding-bottom: 50px;
+   
+}
+ 
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+    padding-right: 150px;
+    padding-top: 50px;
+    gap: 100px;
+    border-color: #0E738C;
+    
+   
+}
+
+.text-image-container {
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: 200px;
+    position: relative;
+    min-width: 40%;
+    object-fit: fill;
+    
+}
+
+.about-background-image {
+    width: 100%;
+    max-width: 500px;
+    min-width: 50px;
+    background-image: url("/images/about/about-us-background.jpg");
+   
+}
+
+h2 {
+    display: inline;
+    font-size: 35px;
+    color: #0E738C;
+    margin: auto, 0 ;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 70px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top:100px;
+    
+}
+
+.add-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 10%;
+    padding-top: 30px;
+    padding-right: 100px;
+    gap: 150px;
+    padding-bottom: 100px;
+    border-color: black;
+    border-style: inset;
+    background-color: beige;
+    
+}
+
+.add-info-box1,.add-info-box2 {
+    flex: 2;
+    padding-bottom: 100px;
+    padding: 30%;
+    border-color: black;
+    border-style: inset;
+    margin: auto;
+    background-color: beige;
+    
+}
+
+.info-image1 {
+    width: 100%;
+    max-width: 500px;
+    min-width: 50px;
+   
+    
+}
+
+
+.info-image2 {
+    width: 100%;
+    max-width: 500px;
+    min-width: 50px;
+}
+
+/* Hemsedal jacket page*/
+
+.hemsedal-image{
+    width: 100%;
+    max-width: 500px;
+    min-width: 100px;
+    object-fit: cover;
+    background-color: #A6A6A6;
+    
+}
+
+
+.hemsedal {
+    display: flex;
+}
+
+
+.hemsedal-text-container {
+    flex-direction: row;
+    max-width: 500px;
+    min-width: 50px;
+    margin: auto 0;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    box-shadow:  0 0 10px #777777;
+    color: black;
+   
+    
+}
+
+
+.purchase {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 15px 70px;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 200px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+        
+ }    
+
+ .purchase:hover {
+    background-color: #fff;
+    color: #0E738C;
+  }
+
+/* Webshop page */
+
+.jackets-feature {
+    max-width: 80%;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:30px solid white;
+    margin: 0 auto;
+    background-image: url("/images/jackets/jackets-feature.jpg");
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    min-width: 50px;
+}
+
+.headline {
+    font-size: 25;
+    color: white;
+    background-color:#404040;
+    border: 10px solid white;
+    padding-left: 50px;
+    margin: auto 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    min-width: 50px;
+    object-fit: cover;
+    margin: 100px;
+}
+
+.menu-one {
+    background-color:#A6A6A6
+
+}
+
+.menu-two {
+    background-color:#A6A6A6;
+
+}
+
+.menu-three{
+    background-color:#A6A6A6;
+
+}
+
+.webshop-img {
+    
+    font-size: 20px;
+    position: relative;
+    color: #FFFFFF;
+    background-color: white;
+    padding: 10px;
+}
+
+.webshop-button {
+    
+    font-size: 15px;
+    position: relative;
+    color: #404040;
+    background-color: white;
+    padding: 5px;
+    transition-duration: 0,6s;
+    cursor: pointer;
+    
+}
+
+.webshop-button:hover{
+    color: #0E738C;
+    background-color:#fff;
+}
+
+/* Contact page */
+
+.contact-form {
+    display: block;
+    max-width: 80%;
+    min-width: 300px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.form-error {
+    color: red;
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .hemsedal
+            {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container 
+    .add-info
+                {
+        flex-direction: column;
+    }
+}
+
+@media only screen and(max-width:600px) {
+    label {
+        display: block;
+        cursor:pointer;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        border-bottom: 1 px #404040;
+    }
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+  
+
+
